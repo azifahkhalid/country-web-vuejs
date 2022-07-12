@@ -8,7 +8,7 @@
                 <input
                     class="appearance-none shadow-md rounded cursor-pointer md:w-96 w-full h-12 py-2 pl-14 pr-4 bg-white dark:bg-dmElement"
                     type="text" placeholder="Search for a country..." v-model="countryName"
-                    v-on:keyup.enter="searchCountryName" />
+                    v-on:keyup.enter="searchCountryName" @blur="searchCountryName" />
             </label>
             <div class="relative block md:pt-0 pt-10">
                 <select
